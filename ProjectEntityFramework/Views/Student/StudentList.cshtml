@@ -1,0 +1,13 @@
+@if (ViewBag.data != null && ViewBag.data.Count > 0)
+{
+    foreach (var student in ViewBag.data)
+    {
+        <h4>@student.sid</h4>
+        <h4>@student.name</h4>
+        <h4>@student.address</h4>
+    }
+}
+else
+{
+    <p>No data available.</p>
+}
